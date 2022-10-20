@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato - Barbearia Alura</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png" alt="Logo da barbearia Alura"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<form> 
+				<label for="nomeesobrenome">Nome e sobrenome</label>
+				<input type="text" id="nomeesobrenome" class="input-padrao" required>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="input-padrao"required placeholder="(00)00000-0000">
+
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+				<fieldset>
+					<legend>Como prefere o nosso contato?</legend>
+
+					<label for="email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+					
+
+					<label for="radio-telefone"><input type="radio" name="contato"  value="telefone" id="radio-telefone" >Telefone</label>
+					
+
+					<label for="radio-whatsapp"><input type="radio" name="contato"  value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+
+
+				</fieldset>
+
+				<fieldset>
+					<legend>Qual horário prefere ser atendido</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+
+
+				<label class="checkbox"><input type="checkbox checked">Gostaria de receber nossas novidades por email?</label>
+
+				<input type="submit" value="Enviar formulário" class="enviar">
+
+				</form>
+
+				<table>
+					<thead>
+					<tr>
+						<th>Dia</th>
+						<th>Horário</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Segunda</td>
+							<td>8h ~20h</td>
+						</tr>
+						<tr>
+							<td>Quarta</td>
+							<td>8h ~20h</td>
+						</tr>
+						<tr>
+							<td>Sexta</td>
+							<td>8h ~20hs</td>
+						</tr>
+					</tbody>
+				</table>
+
+		</main>
+
+		<footer>
+			<img src="logo-branco.png" alt="Logo da barbearia Alura">
+			<p class="copyright">&copy;Copyright Barbearia Alura 2022</p>
+		</footer>
+
+	</body>
+
+</html>
+
+<script>
+
+	/* RESUMOS Aprendemos:
+
+1-
+
+A criar um formulário HTML:
+A tag que o representa é a <form>
+A tag <input>, para a entrada de dados do usuário
+A criar uma etiqueta para o input, com a tag <label>
+A conectar um input com o seu label
+(<label for="telefone">Telefone</label>
+<input type="text" id="telefone">)
+
+Colocamos um id para o input e associamos esse id ao atributo for do label
+Alguns tipos de input, como text e submit
+(<input type="submit" value="Enviar formulário">)
+For tem que ter o id com o mesmo nome.
+A ordem de colocar o input no label altera a visualização.
+
+Que label possui o display inline e o input possui display inline-block
+(form input {
+	display: block;)
+
+A estilizar o nosso formulário pelo CSS.
+A propriedade padding serve para alterarmos o espaçamento interno, entre o conteúdo e a borda.
+
+2-
+
+O textarea, para entradas de texto de mais de uma linha
+cols= colunas
+rows=linhas
+
+O input do tipo radio
+Como agrupar vários input do tipo radio, impedindo que mais de um input seja selecionado
+O input do tipo checkbox (input type="checkbox)
+
+Que podemos criar um input dentro de um label, assim associando-os:
+
+A ordem de colocar o input no label altera a visualização;
+<label for="radio-nome">Nome</label>
+<input type="radio" name="nome diferente" value="nome" id="radio-nome">;
+A propriedade name só pode ser "preenchida" uma única vez, por isso que, quando eu seleciono um dos itens, ele desmarca o outro, mantendo somente um selecionado.
+
+Qual a melhor abordagem quando temos uma configuração de CSS aplicada para um item e queremos replicar ela para um item parecido?
+
+Usar os seletores dos itens separados por vírgula
+Essa é uma forma simples de fazermos a mesma configuração de CSS funcionar para os dois itens, sendo eles seletores dos elementos, de ids ou de classes.
+
+Mais estilizações para a nossa página
+Criar uma classe
+Quando temos um estilo que pode ser repetido, uma excelente estratégia é extrair isso para uma classe e usar a classe para aplicar esses estilos nos nossos elementos.
+
+Como funciona a hierarquia no CSS
+Ordem de "força": 
+HTML - inline (1000)
+CSS - id(100),class(10),tag(1).
+
+O select, que é seletor, um campo de seleção de um item, e o option, que representa cada opção do seletor:
+A estrutura da tag <select> é composta de um ou mais <option>.
+
+
+3-
+
+Alguns tipos de inputs para celular: email, tel, number, password, date, datetime, month e search:
+http://mobileinputtypes.com/ 
+
+Exemplo de tipos de input para facilitar a interação dos usuário de telefone.
+
+Como não permitir que um campo não seja preenchido, através do atributo required:
+(required : dentro do input faz o item ser obrigatório de preencher).
+
+Como exibir uma sugestão de preenchimento para os campos, através do atributo placeholder:
+(placeholder : texto exemplo como deveria digitar).
+
+Como deixar uma opção marcada por padrão nos nossos input radio e checkbox, através do atributo checked:
+(checked : dentro do input de seleção ser obrigatório de escolher).
+
+Como estruturar melhor o nosso código com fieldset e legend:
+A tag <fieldset> é usada para criar uma divisão no nosso formulário, com um ou mais <input>.
+
+É a tag <legend> que usamos para um título de um grupo de campos em qualquer formulário.
+
+Como adicionar uma alternativa à imagem, descrevendo-a, com o atributo alt:
+alt="descrição da imagem" : dentro da tag "img" para descrever a imagem, serve para acessibilidade e caso a imagem não carregue.
+
+4- 
+
+Como estilizar o botão de envio de formulário (com a classe dele no CSS)
+A realizar transições nos nossos elementos, com a propriedade CSS transition:
+transition: 3s;
+Utilizamos a propriedade transition para prover uma transição visual de um elemento. Para mais de um efeito em um mesmo objeto aplicar "all".
+
+A modificar o estilo do ponteiro do mouse, quando passar por cima de determinado elemento, através da propriedade CSS  (cursor: pointer; Vira a "mãozinha").
+
+A realizar transformações nos nossos elementos, como aumentar proporcionalmente a escala de determinado elemento ou rotacioná-lo, através da propriedade CSS (transform: scale(1.2) é 20%, para aplicar outros valores ver na escala).
+
+transform: rotate(20deg) - roda o objeto
+
+Nos efeitos de "transform" são aplicados em ordem, caso tenha mais de um efeito usar na mesma linha.
+
+5-
+
+
+
+Utilizamos a tag <table> para abrir uma 
+
+sequencia de tags para uma tabela simples.
+A tabela tem tags com sequencia de ordem:
+<table>
+<thead> cabeçalho
+<tbody> Conteúdo
+<> Rodapé
+
+Dentro delas as tags:
+<thead>
+<th> Marca a linha e coluna do cabeçalho.
+</thead>
+
+<tbody>
+<tr> para marcar uma linha de uma tabela;
+<td> para marcar uma coluna de uma tabela.
+</tbody> 

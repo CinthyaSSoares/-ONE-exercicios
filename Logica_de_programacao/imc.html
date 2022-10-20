@@ -1,0 +1,107 @@
+<meta charset="UTF-8">
+
+<script> 
+
+	function pulaLinha() {
+
+		document.write("<br><br>");
+
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+
+	}
+var pesoCinthya = 46;
+var alturaCinthya = 1.56;
+
+var imcCinthya = pesoCinthya / (alturaCinthya * alturaCinthya);
+
+mostra("O IMC da Cinthya é " + imcCinthya + ".");
+
+var pesoAmigo = 70;
+var alturaAmigo = 1.75;
+
+var imcAmigo = pesoAmigo / (alturaAmigo * alturaAmigo);
+mostra(" O IMC do Persi é " + imcAmigo + ".");
+
+
+
+// ou na forma mais simplificada
+
+function pulaLinha() {
+
+		document.write("<br><br>");
+
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+
+	}
+
+		function calculaImc(peso, altura) {
+
+			var imc = peso / (altura * altura);
+
+			mostra("O IMC calculado é " + imc + ".");
+		}
+
+calculaImc(46, 1.56);
+calculaImc(70, 1.75);
+
+// ou de outra forma
+
+	function pulaLinha() {
+
+		document.write("<br><br>");
+
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+   }
+
+   function calculaImc2(altura, peso) {
+
+   	var imc = peso / (altura * altura);
+   	return imc;
+   }
+
+   var imcCinthya2 = calculaImc2(46, 1.56);
+
+   mostra(imcCinthya2);
+
+   // ou mais simples ainda 
+
+  function pulaLinha() {
+
+		document.write("<br><br>");
+
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+
+	}
+
+	function calculaImc3(altura, peso) {
+
+		return peso / (altura * altura);
+}
+
+	var totalImc3 = calculaImc3(46, 1.56) + calculaImc3(70, 1.75);
+
+	document.write(" A soma dos IMCs é " + totalImc3);
+
+   mostra(imcCinthya2);
+
+</script>

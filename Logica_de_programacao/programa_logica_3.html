@@ -1,0 +1,43 @@
+<canvas width="600" heigth="400"></canvas>
+
+<script>
+
+	var tela = document.querySelector('canvas');
+	var pincel = tela.getContext('2d');
+
+	pincel.fillStyle = 'lightpink';
+	pincel.fillRect(0, 0, 600, 400);
+
+	/*
+	//criando a função para alerta ao clicar na tela
+
+	function exibeAlerta(evento) {
+
+		console.log(evento);
+		alert('Cliquei');
+	}
+
+	//função para funcionar ao clicar com a function criada
+
+	tela.onclick = exibeAlerta;
+
+	*/
+
+	function desenhaCirculo(evento) {
+
+		var x = evento.pageX - tela.offsetLeft; //arredonda a localição do X
+		var y = evento.pageY - tela.offsetTop; //arredonda a localição do Y
+
+		pincel.fillStyle = 'blue'; //cor
+		pincel.beginPath(); 
+		pincel.arc(x, y, 10, 0, 2 * 3.14); //fazendo o circulo
+		pincel.fill(); //preencher
+		console.log(x + ',' + y);
+
+	}
+
+		tela.onclick = desenhaCirculo;
+
+
+
+</script>

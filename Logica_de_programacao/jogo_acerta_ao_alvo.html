@@ -1,0 +1,70 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+	var tela = document.querySelecto('canvas');
+	var pincel = tela.getContext('2d');
+	pincel.fillStyle = 'lightgray';
+	pincel.fillRect(0, 0, 600, 400);
+
+	var raio = 10
+	var xAleatorio;
+	var yAleatorio;
+
+	function desenhaCirculo(x, y, raio, cor) {
+
+		pincel.fillStyle = cor;
+		pincel.beginPath();
+		pincel.arc(x, y, raio, 0, 2 * Math.PI);
+		pincel.fill();
+	}
+
+	function limpaTela() {
+		pincel.clearReact(0, 0, 600, 400);
+	}
+
+	function desenhaAlvo(x, y,) {
+
+		desenhaCirculo(x, y, raio+20, 'red');
+		desenhaCirculo(x, y, raio+10, 'white');
+		desenhaCirculo(x, y, raio, 'red');
+
+	}
+
+	function sorteiPosicao(maximo) { //posição aleatoria
+
+		return Math.floor(Math.random() * maximo);
+	}
+
+	function atualizaTela() {
+
+		limpaTela();
+		var xAleatorio = sorteiPosicao(600);
+		var yAleatorio = sorteiPosicao(400);
+		desenhaAlvo(xAleatorio, yAleatorio);
+
+	}
+
+	setInterval(atualizaTela, 1000);
+
+	function dispara(evento) { //localiza a posição
+
+		 var x = evento.pageX - tela.offSetLeft;
+		 var y = evento.pagey - tela.offsetTop;
+
+		 if( (x > xAleatorio - raio)
+		 	&& (x < xAleatorio + raio)
+		 	&& (y > yAleatorio - raio)
+		 	&& (y < yAleatorio + raio)) {
+
+		 	alert( 'Acertou!!!');
+		 }
+ 	tela.onclick = dispara;
+
+	}
+
+//Math.floor arredonda para baixo
+
+//setInterval() podemos definir um intervalo de tempo para executar a função novamente.
+
+</script>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+
+		<title>Barbearia Alura</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png" alt="Logo da barbearia Alura"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<img class="banner" src="banner.jpg">
+
+		<main>
+			<section class="principal">
+				<h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
+
+				<img class="utensilios" src="utensilios.jpg" alt="Utensílios de um barbeiro.">
+
+				<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+				<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</p>
+
+				<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</em></p>
+			</section>
+
+			<section class="mapa">
+				<h3 class="titulo-principal">Nosso estabelecimento</h3>
+				<p>Nosso estabelecimento está localizado no coração da cidade.</p>
+
+				<div class="mapa-conteudo">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.449977466541!2d-46.63452058549083!3d-23.588189868467616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum%20-%20Escola%20de%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1660404140719!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</section>
+
+			<section class="beneficios">
+				<h3 class="titulo-principal">Benefícios</h3>
+
+				<div class="conteudo-beneficios">
+					<ul class="lista-beneficios">
+						<li class="itens">Atendimento aos Clientes</li>
+						<li class="itens">Espaço diferenciado</li>
+						<li class="itens">Localização</li>
+						<li class="itens">Profissionais Qualificados</li>
+						<li class="itens">Pontualidade</li>
+						<li class="itens">Limpeza</li>
+					</ul><img src="beneficios.jpg" class="imagem-beneficios">
+				</div>
+
+				<div class="video">
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+				</div>
+			</section>
+		</main>
+		<footer>
+			<img src="logo-branco.png" alt="Logo da barbearia Alura">
+			<p class="copyright">&copy;Copyright Barbearia Alura 2022</p>
+		</footer>
+
+	</body>
+
+
+</html>
+
+
+
+<script> /* Explicações
+
+- <!DOCTYPE html> : A tag DOCTYPE serve para informar ao navegador qual versão do HTML estamos usando.
+
+- <meta charset="UTF-8"> : É preciso apontar para o navegador que estamos usando um dicionário que tenha acentos e cedilha, sinais gráficos comuns na língua portuguesa e outras linguas.
+
+- <title> OOOOO </title> : Título que aparece na aba do navegador
+
+<html> OOOOO </html> : Marcação do mundo HTML
+
+- As tags <head> e <body> : Na estrutura correta do HTML, inserimos as informações que queremos passar para o navegador no head e as tags de conteúdo no body.
+
+- <tag> </tag> As tags são semânticas e para cada uma delas temos um significado e um resultado diferente.
+
+- <strong>XXXX</strong> : Negrito
+
+- <em>XXXX</em> : Itálico
+
+
+Nesta aula, aprendemos:
+
+1-
+A definir a estrutura básica do HTML
+Com a tag DOCTYPE, definimos qual versão do HTML estamos utilizando
+A tag <html>, que marca o conteúdo a ser renderizado no navegador
+Dentro desta tag, podemos definir a linguagem da página, através da propriedade lang
+Como passar as informações do encoding da nossa página para o navegador, através da tag <meta> e da propriedade charset
+Como definir o título de uma página, através da tag <title>
+Como separar as informações que estão sendo passadas para o navegador, utilizando a tag <head>
+Como separar o conteúdo da página, utilizando a tag <body>
+
+2 - 
+A mexer na apresentação dos textos
+No alinhamento deles (text-align)
+No tamanho da fonte (font-size)
+Na cor de fundo (background)
+Na cor do texto (color)
+CSS inline
+Na linha onde temos a nossa tag, adicionamos a propriedade do CSS
+A tag <style>
+Dentro da tag, podemos colocar marcações de CSS referentes aos elementos que temos no nosso HTML
+A apresentação do CSS com um arquivo externo
+Como funciona o estilo em cascata do CSS
+Como importar um arquivo externo de CSS dentro da nossa página HTML
+Como representar cores no CSS
+Através do nome da cor
+Através do seu hexadecimal
+Através do seu RGB
+
+3-
+Como reestruturar o nosso código, removendo os CSS inline e colocando-os no arquivo CSS externo
+Como criar um identificador para marcar especificamente um elemento
+Como fazer referência a esse identificador no CSS
+Como adicionar uma imagem à nossa página
+Como ajustar a altura do elemento, através da propriedade height
+Como ajustar a largura do elemento, através da propriedade width
+Como ajustar o espaçamento interno do elemento, através da propriedade padding
+Como ajustar o espaçamento externo do elemento, através da propriedade margin
+Como se comporta um time de front-end hoje em dia
+
+4-
+A trabalhar com listas não-ordenadas (ul) e listas ordenadas (ol)
+Para cada um dos itens da lista, utilizamos a tag <li>
+O conceito das classes no CSS <tag class="nomedaclasse">
+Elas servem para marcar itens, que são repetíveis
+Como referenciar uma classe no CSS ( .nomedaclasse)
+Divisões de conteúdo, utilizando a tag <div>
+Os comportamentos inline e block
+
+5-
+O conceito de cabeçalho da página e como criá-lo (<header>)
+Que o cabeçalho da página deve ter mais destaque
+Que não é recomendado criar estilos usando tags
+O ideal é usarmos classes para tudo
+
+*/
+
+/* Aula de CSS 3 RESUMO
+
+1-
+
+A ajustar a página principal para utilizar os mesmos padrões da página de produtos.
+
+Para um bloco onde o conteúdo tenha o mesmo significado, o mesmo sentido, usamos uma <section>.
+
+Na criação de classes ser o mais específico e genérico possível.
+
+Quando for estilo (CSS) usa classes, e id apenas para comportamento (Javascript).
+
+em (CSS); - é utilizado para ser o proporcional do tamanho da fonte.
+
+Medidas proporcionais com CSS:
+
+margin: 10px 3px 30px 5px;   topo:     margem de 10px 
+                             direita:  margem de 3px  
+                             inferior: margem de 30px 
+                             esquerda: margem de 5px  
+
+
+Como funciona a flutuação dos elementos e como modificá-la, com a propriedade float do CSS
+Tanto o float:left quanto o float: right servem para que o elemento se destaque na tela, deixe de ocupar o espaço em que estava, para que os outros elementos possam se posicionar ao redor dele mas CUIDADO ele afeta os elementos ao redor, e caso afete algum que você não quer tem que usar o "clear" na classe do objeto que não era para afetar e colocar o lado que foi aplicado o float. 
+
+Como limpar o float, com a propriedade clear do CSS (clean: lefht/right)
+
+2-
+
+A utilizar fontes externas nas nossas páginas:
+<iframe> (ou elemento HTML inline frame) representa um contexto de navegação aninhado, efetivamente incorporando outra página HTML para a página atual.
+
+Como incorporar um mapa à nossa página
+Como incorporar um vídeo à nossa página
+
+3-
+
+A melhorar mais ainda a semântica da página principal, com novas divisões, classes, etc.
+
+Novas pseudo-classes-
+(:last-child, :first-child, :before, :after)
+
+Quando queremos criar um elemento na página, via CSS, antes do elemento do HTML, usamos a propriedade :before, e depois do elemento :after. 
+
+Exemplo- .itens:before {
+	content: "★";
+}
+
+
+Como aplicar um background gradiente na página-
+Exemplo de degradê com 5 cores em linha [ background: linear-gradient(gray, yellow, red, orange, blue) ]. Degrade de cores no CSS pode misturar as cores, mudar o sentido e ordem. Site para testar e fazer gradiend:
+
+https://mycolor.space/gradient3?ori=to+right+bottom&hex=%2394F0CC&hex2=%2380A8F2&hex3=%23F6A7F2&submit=submit
+
+
+Pseudo-elementos-
+Exemplos de pseudo-classe do CSS:
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes
+
+e os significados de cada uma para uso:
+https://tableless.com.br/pseudo-classes-css/
+
+Para usar fontes externas-
+( https://fonts.google.com/?query=mo ) 
+Selecionar os estilos de familia, copiar o link htlm na tag head e copiar o nome de referencia no CSS na primeira linha pelo body para afetar todo o conteúdo. 
+
+IMPORTANTE!! (CSS) Ao usar o " display: 
+
+inline-block ", não deve ter espaço entre as linhas do html pois isso afeta a visualização.
+
+Tag iframe usa conteúdo externo como vídeo, imagem, mapa e com os elementos de mataho, margem, aparece no site.
+Exemplo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0"allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+4-
+
+Seletores avançados-
+
+Atribuir os valores apenas no primeiro filho:
+
+main > p {}
+
+Usar um ponto de partida para ancorar e em seguida definir qual objetivo quer atribuir os valores:
+
+img + p {}
+
+Atribuir valor a todos os elementos descendentes a partir de uma ancora:
+
+img ~ p {}
+
+Como atrubuir valores em vários elementos mas excluir um em pespecífico:
+
+.classe p:not(#elemento) {}
+
+
+
+Como fazer cáculos no CSS-
+
+width: calc( 33% - 10px )
+
+
+Como manipular a opacidade dos elementos, com a propriedade CSS opacity-
+
+( opacity: )Determina a opacidade de todos elementos e cores da página, tem o limite de 100-0%, determinado por 1 sendo 100% até 0. 
+Exemplo:
+
+.classe {
+  opacity: 0.3; (30%)
+}
+
+Usado com hover e transition para efeitos visuais.
+
+Como manipular a opacidade das cores-
+Camada alfa (a) de opacidade nas cores RGB.
+Exemplo:
+
+.classe {
+  color: rgba(0,0,0, 0.3) 
+}
+Rgb adiciona o "a", e no fim das 3 cores tem a opacidade que no caso é "0.3" resultando em opacidade de 30% nas cores.
+
+
+Como adicionar um sombreamento em volta dos elementos, com a propriedade CSS box-shadow e como adicionar um sombreamento em textos, com a propriedade CSS text-shadow-
+
+Como colocar sombra:
+
+text-shadow - para sombra em texto, e box-shadow para outros elementos.
+
+.classe {
+  box-shadow: X Y (opacidade) (propagação) 
+
+#000000;
+
+Adicionar as medidas em "px ou em". Para adicionar mais sombras usar a " , ".
+
+O box-shadow é uma propriedade do CSS, é utilizado para adicionar efeitos de sombra em volta de um elemento. Você pode especificar mais de um efeito, separando com virgulas. Uma box-shadow é descrita pelo deslocamentos (offset) X e Y em relação ao elemento, desfoco e propagação do raio e cor.
+
+ offset-x | offset-y | color 
+box-shadow: 60px -16px teal;
+
+ offset-x | offset-y | blur-radius | color 
+box-shadow: 10px 5px 5px black;
+
+ offset-x | offset-y | blur-radius | 
+
+spread-radius | color 
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+ inset | offset-x | offset-y | color 
+box-shadow: inset 5em 1em gold;
+
+ Any number of shadows, separated by commas 
+box-shadow: 3px 3px red, -1em 0 0.4em olive;
+
+ Global keywords 
+box-shadow: inherit;
+box-shadow: initial;(inicial)
+box-shadow: unset; 
+box-shadow: inset; (interna)
+
+
+5-
+
+Design responsivo: como ajustar o estilo da nossa página de acordo com o tamanho da tela do dispositivo que a acesse-
+
+Meta tag de Viewport no HTML colocar embaixo da tag meta UTF:
+
+<meta name="viewport" content="width=device-width"> .
+
+Media Queries (CSS)-
+
+Uma media query consiste de um media type e pelo menos uma expressão que limita o escopo das folhas de estilo usando media features, tal como largura, altura e cor. Media queries, adicionadas no CSS3, deixam a apresentação do conteúdo adaptado a uma gama especifica de dispositivos não precisando mudar o conteúdo em si.
+
+Exemplo-
+
+@media screen and (max-width:  480px) {
+	.caixa, .classe, . classe {
+		width: auto;
+	}	
+}
+
+	h1 {}
+	
+
+CUIDADO!! Conteúdos com "iframe" de tamanho definido precisam ser editados no html novamente.
+
+(https://developer.mozilla.org/pt-BR/docs/Web/CSS/Media_Queries/Using_media_queries)
+
+*/
+</script>

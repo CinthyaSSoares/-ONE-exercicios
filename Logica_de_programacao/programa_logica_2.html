@@ -1,0 +1,43 @@
+
+<canvas width="600" height="400"></canvas>
+
+
+<script>
+  
+  //chama a tela do canvas
+ var tela = document.querySelector('canvas');
+ var pincel = tela.getContext('2d'); //tipo de pincel
+
+ pincel.fillStyle = 'white';//cor da tinta
+
+ pincel.fillRect(0, 0, 600, 400); //(x,y) do plano cartesiano
+
+//canvas é a tela onde vai pintar, com limite de tamanho 600 x 400
+
+pincel.fillStyle = 'green';
+pincel.fillRect(0, 0, 200, 400);
+
+pincel.fillStyle = 'red';
+pincel.fillRect(400, 0, 200, 400);
+
+//como fazer o triangulo
+pincel.fillStyle = 'pink';
+pincel.beginPath(); //começo do caminho
+pincel.moveTo(300, 200); //mover o ponto para começar a pintar
+pincel.lineTo(200, 400); //linha onde começa e termina um lado
+pincel.lineTo(400, 400);
+pincel.fill(); //preencher o caminho das linhas
+
+//como fazer um circulo
+
+pincel.fillStyle = 'blue'; //sempre atribuir a cor primeiro
+pincel.beginPath(); //começo onde vai começar
+pincel.arc(300, 200, 50, 0 2 * 3.14); //as coordenadas de circulo
+pincel.fill();
+
+
+//Até então foram usados termos com a mesma estrutura diversas vezes, como pincel.comando(informação1, informação2, etc), com vários comandos e informações diferentes. Chamamos estas instruções que as bibliotecas (APIs) deixam disponíveis para usarmos em nossos programas de métodos.
+
+
+
+</script>

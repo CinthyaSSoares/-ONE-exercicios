@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia(n) {
+
+        return Math.round(Math.random() * n);
+    }
+
+    var numeroPensado = Math.round(Math.random() * 10);
+
+    var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
+
+    if(chute == numeroPensado) {
+
+        mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+    } else {
+
+        mostra("Você errou! Eu tinha pensado no " + numeroPensado);
+    }
+
+// Math.round = arredondar o número para inteiro
+// Math.random = número aleatório
+
+// if é a condição (true or false), se for comparar com números tem que usar os simbolos " > , <  >=, <= e == para igual ou != para diferente".
+// Se for comparar mais de uma condição usar && com ().
+
+//Se quisermos exibir um pop-up, que mostre uma pergunta e permita ao usuário entrar com um valor, fazemos uso da função prompt.
+
+//parseInt(), uma função existente no JavaScript, e preparada para receber um texto a ser convertido em número.
+
+</script>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Produtos - Barbearia Alura</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<ul class="produtos">
+				<li>
+					<h2>Cabelo</h2>
+					<img src="cabelo.jpg">
+					<p class="produto-descricao">Na tesoura ou máquina, como o cliente preferir</p>
+					<p class="produto-preco">R$ 25,00</p>
+				</li>
+				<li>
+					<h2>Barba</h2>
+					<img src="barba.jpg">
+					<p class="produto-descricao">Corte e desenho profissional de barba</p>
+					<p class="produto-preco">R$ 18,00</p>
+				</li>
+				<li>
+					<h2>Cabelo + Barba</h2>
+					<img src="cabelo+barba.jpg">
+					<p class="produto-descricao">Pacote completo de cabelo e barba</p>
+					<p class="produto-preco">R$ 35,00</p>
+				</li>
+			</ul>
+		</main>
+
+		<footer>
+			<img src="logo-branco.png">
+			<p class="copyright">&copy;Copyright Barbearia Alura 2022</p>
+		</footer>
+
+	</body>
+
+</html>
+
+<script>
+	/* RESUMOS:
+
+1-
+A criar links para outras páginas, sejam elas do nosso projeto ou páginas externas (<a href="nomedoarquivo.html"></a>)
+Um reforço aos estilos inline e block (display: inline;)
+Como transformar o texto para ter todas as letras maiúsculas (na pagina css (text-transform: uppercase;))
+Como deixar o texto em negrito com CSS (font-weight: bold;)
+Como remover a decoração do texto (text-decoration: none;)
+
+2-
+Como remover os estilos que o navegador cria automaticamente, referenciando o arquivo "reset.css" com ( <link rel="stylesheet" href="reset.css"> ).
+Como funciona os posicionamentos static, relative e absolute dos elementos:
+
+ Com o (position: absolute) eu consigo posicionar meu elemento em qualquer lugar da página.
+
+ O (position: relative) determina que o elemento será posicionado de acordo com o fluxo natural da página.
+
+Como posicionar o cabeçalho da nossa página (Delegamos para o navegador fazer a conta de calcular a largura que resta, dividir por dois, e adicionar metade em cada um dos lados. (margin: 0 auto)).
+
+3-
+A tag (<main>), para o conteúdo principal da nossa página.
+A criar listas complexas, com títulos, imagens e parágrafos.
+A utilizar o inline-block (Um elemento que tem o seu display com o valor inline-block o tamanho pode ser ajustado, tanto na largura, quanto na altura).
+A praticar e estilizar o conteúdo principal da nossa página (Quando adiciono espaçamento interno, o padding  aumenta o seu tamanho. Quando declaro que existe um espaçamento interno, estou aumentando o conteúdo (box-sizing: border-box) impede o aumento e limita o espaçamento dentro do espaço ja definido).
+É a mesma coisa:
+
+margin: 10px 0 0;
+ou
+margin-top: 10px;
+
+4-
+Através do CSS, aplicar bordas nos elementos (cor e tamanho).
+
+Os diferentes tipos de bordas:
+none: sem borda;
+hidden: equivalente a none;
+dotted: borda pontilhada;
+dashed: borda tracejada;
+solid: borda contínua;
+double: borda dupla;
+groove: borda entalhada;
+ridge: borda em ressalto.
+
+A deixar a borda arredondada com a propriedade (border-radius: 10px;), podemos desenhar o canto arredondado dos elementos.
+
+5-
+Algumas pseudo-classes CSS:
+A pseudo-classe :hover corresponde quando o usuário designa um elemento com um dispositivo apontador, mas não necessariamente o ativa. Este estilo pode ser substituído por qualquer outra pseudo-classe de link-relacionados, isto é :link, :visited, e :active, aparecendo em regras subsequentes. Na ordem para estilizar apropriadamente links, você precisa colocar a regra :hover depois das regras :link e :visited mas antes da regra :active, como definido pela ordem LVHA: :link — :visited — :hover — :active.
+
+:hover {}, quando o usuário passa o cursor sobre o elemento (A mudar a cor do texto e/ou da borda de um elemento, quando o usuário passar o cursor sobre o mesmo).
+:active {}, quando um elemento está sendo ativado pelo usuário (A mudar a cor da borda de um elemento, quando o mesmo estiver sendo ativado pelo usuário).
+
+6-
+A tag footer, para o rodapé da nossa página.
+
+Que, com CSS, podemos colocar uma imagem de fundo em um elemento e quando colocamos uma imagem de fundo em um elemento, o CSS, por padrão, copia e cola a imagem diversas vezes até ocupar todo o espaço do elemento.
+
+A tabela Unicode com vários símbolos e as linguagens para se usar.
+
+</script>

@@ -1,0 +1,51 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha() {
+
+	document.write("<br><br>");
+
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var vitorias = parseInt(prompt("entre com o número de vitórias."));
+
+	var empates = parseInt(prompt("Entre com o número de empates."));
+
+	var pontos = (vitorias * 3 + empates);
+
+	mostra("Os pontos do seu time é " + pontos);
+
+	if(pontos <28) {
+
+		mostra("Seu time está pior do que o ano passado.");
+	}
+
+	if(pontos > 28) {
+
+		mostra("Seu time está melhor do que o ano passado.");
+	}
+
+	if(pontos == 28) {
+
+		mostra("Seu time está igual ao ano passado");
+	}
+
+	mostra("FIM");
+
+// if é a condição (true or false), se for comparar com números tem que usar os simbolos " > , <  >=, <= e == para igual ou != para diferente".
+// Se for comparar mais de uma condição usar && com ().
+
+//Se quisermos exibir um pop-up, que mostre uma pergunta e permita ao usuário entrar com um valor, fazemos uso da função prompt.
+
+//parseInt(), uma função existente no JavaScript, e preparada para receber um texto a ser convertido em número.
+
+
+
+</script>

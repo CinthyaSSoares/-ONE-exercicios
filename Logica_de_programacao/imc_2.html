@@ -1,0 +1,55 @@
+<meta charset="UTF-8">
+
+<script> 
+
+function pulaLinha() {
+
+		document.write("<br><br>");
+
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+
+	}
+
+	function calculaImc3(altura, peso) {
+
+		return peso / (altura * altura);
+}
+
+	var nome = prompt("Informe o seu nome");
+	var altura = prompt(nome + ", informe sua altura");
+	var peso = prompt(nome + ", informei seu peso");
+
+	var imc = calculaImc3(altura, peso);
+
+	mostra(nome + ", o seu IME é " + imc);
+
+	if(imc > 35) {
+
+		mostra("Você está acima do recomendado");
+	}
+
+	if(imc < 18.5) {
+
+		mostra("Você está abaixo do recomendado");
+	}
+
+	if(imc >= 18.5 && imc <=35) {
+
+		mostra("Seu IMC está excelente!");
+	}
+
+
+// if é a condição (true or false), se for comparar com números tem que usar os simbolos " > , <  >=, <= e == para igual".
+// Se for comparar mais de uma condição usar && com ().
+
+//Se quisermos exibir um pop-up, que mostre uma pergunta e permita ao usuário entrar com um valor, fazemos uso da função prompt.
+
+//parseInt(), uma função existente no JavaScript, e preparada para receber um texto a ser convertido em número.
+
+
+</script>

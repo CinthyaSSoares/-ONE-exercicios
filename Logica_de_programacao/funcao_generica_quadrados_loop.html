@@ -1,0 +1,45 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+	function desenhaQuadrado(x, y, cor) {
+
+		var tela = document.querySelector('canvas'); //tela
+		var pincel = tela.getContext('2d');
+
+		pincel.fillStyle = cor; //cor do pincel
+		pincel.fillReact(x, y, 50, 50);
+		pincel.fillStroke = 'black'; //linha
+		pincel.strokeReact(x, y, 50, 50);
+	}
+
+	desenhaQuadrado(0, 0, 'blue');
+	desenhaQuadrado(0, 50, 'pink');
+	desenhaQuadrado(0, 100, 'green');
+	
+//x = horizontal e y= vertical
+
+	//Agora o começo do loop para repetir uma ação automática com o WHILE
+
+	/*
+	var x = 0;
+
+	while(x < 600) { //repetir enquanto for menor que 600
+
+		desenhaQuadrado(x, 0, 'pink');
+		x = x +50; //vai somar o valor inicial com 50 e ir aumentando
+
+		desenhaQuadrado(x, 50, 'red'); (outra linha de quadrado)
+	}
+	   
+	*/
+// E o começo do loop para repetir uma ação automática com o FOR
+
+       //variavel com o valor de x / até onde repete/ somando o valor inicial com 50 e ir aumentando
+	for(var x = 0; x <600; x = x +50) {
+
+		desenhaQuadrado(x, 0, 'green');
+
+	}
+
+</script>

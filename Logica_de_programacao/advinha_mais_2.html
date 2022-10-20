@@ -1,0 +1,56 @@
+<meta charset="UTF-8">
+
+<input/>
+
+<button>Compare com o meu segredo</button>
+
+<script>
+	
+	var segredos = [3,6,9,12];
+
+	var input = document.querySelector("input");
+	input.focus();
+
+	function verifica() {
+
+		var achou = false;
+
+		for(var posicao = 0; posicao < 4; posicao++) {
+
+			if(input.value == segredos[posicao]) {
+
+				alert("Você ACERTOU PARABÉNS!!");
+				achou = true;
+				break;
+
+			}
+		}
+
+		if(achou == false) {
+
+		alert("Você ERROU!!");
+
+	}
+
+		input.value = "";
+		input.focus();
+	}
+	var button = document.querySelector("button");
+
+	button.onclick = verifica;
+
+	//array: permite que uma variável possua vários valores. Sempre começando por 0 e entre [x,y,z];
+
+	// codigos.length: A propriedade length tem como responsabilidade retornar a quantidade de caracteres de uma string ou o tamanho de um array. Caso a string ou o array esteja vazio, é retornado o valor 0.
+	//(EX:
+		//var stringExemplo = "Aprendendo JavaScript na DevMedia!";
+		//var tamanho = stringExemplo.length;
+
+		//**O valor atribuído à variável tamanho será o número 34**)
+		
+
+	// booleano: ex.: ('true' ou 'false');
+
+
+
+</script>
